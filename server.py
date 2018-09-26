@@ -4,10 +4,10 @@ import os
         
     except mysoc.error as err:
         exit()
-
+hostname=input("Please type host name:")
 # Define the port on which you want to receive  from  the server
     Rport = 50007
-    myip = mysoc.gethostbyname(mysoc.gethostname())
+    myip = mysoc.gethostbyname(hostname)
 # connect to the server on local machine
     server_binding=(myip, Rport)
     rsd.bind(server_binding)
