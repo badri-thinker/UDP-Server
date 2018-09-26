@@ -4,7 +4,7 @@ import os
         
     except mysoc.error as err:
         exit()
-
+hostname=input("Please tyep host name:")
 # Define the port on which you want to receive  from  the server
     Rport = 50007
     myip = mysoc.gethostbyname(mysoc.gethostname())
